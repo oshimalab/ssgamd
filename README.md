@@ -36,41 +36,33 @@ data_paper
 │   ├── cmd
 │   │   ├── calc_pmf.py
 │   │   ├── reweight.sh
-│   │   ├── run.inp
-│   │   └── run0.rst
+│   │   └── run.inp
 │   ├── gamd
 │   │   ├── calc_pmf_gamd.py
 │   │   ├── reweight.sh
-│   │   ├── run.inp
-│   │   └── run0.rst
+│   │   └── run.inp
+│   ├── run0.rst
 │   ├── ssgamd
 │   │   ├── calc_dG.py
 │   │   ├── calc_pmf_ssgamd.py
 │   │   ├── reweight.sh
-│   │   ├── run.inp
-│   │   └── run0.rst
+│   │   └── run.inp
 │   ├── system.inpcrd
 │   ├── system.pdb
 │   └── system.prmtop
 ├── src_pp1
 │   ├── reus
 │   │   ├── reweight.sh
-│   │   ├── rst
-│   │   │   ├── rep1.rst
-│   │   │   ├── rep10.rst
-│   │   │   ├── ...
-│   │   │   ├── rep8.rst
-│   │   │   └── rep9.rst
 │   │   └── run.inp
+│   ├── rst
+│   │   ├── rep1.rst
+│   │   ├── rep10.rst
+│   │   ├── ...
+│   │   ├── rep8.rst
+│   │   └── rep9.rst
 │   ├── ssgareus
 │   │   ├── calc_pmf_ssgamd.py
 │   │   ├── reweight.sh
-│   │   ├── rst
-│   │   │   ├── rep1.rst
-│   │   │   ├── rep10.rst
-│   │   │   ├── ...
-│   │   │   ├── rep8.rst
-│   │   │   └── rep9.rst
 │   │   └── run.inp
 │   ├── system.inpcrd
 │   ├── system.pdb
@@ -79,12 +71,11 @@ data_paper
     ├── remd
     │   ├── calc_pmf_remd.py
     │   ├── reweight.sh
-    │   ├── run.inp
-    │   └── run0.rst
+    │   └── run.inp
+    ├── run0.rst
     ├── ssgamd
     │   ├── calc_pmf_ssgamd.py
     │   ├── reweight.sh
-    │   ├── run0.rst
     │   ├── run1.inp
     │   ├── run10.inp
     │   ├── ...
@@ -93,12 +84,12 @@ data_paper
     ├── ssgaremd
     │   ├── calc_pmf_ssgamd.py
     │   ├── reweight.sh
-    │   ├── run.inp
-    │   └── run0.rst
+    │   └── run.inp
     ├── system.inpcrd
     ├── system.pdb
     └── system.prmtop
 ```
+
 ### File descriptions
 
 | Extension | Description |
