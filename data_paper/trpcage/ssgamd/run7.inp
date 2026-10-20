@@ -1,0 +1,60 @@
+[INPUT]
+prmtopfile = ../system.prmtop
+ambcrdfile = ../system.inpcrd
+rstfile    = ../run0.rst
+
+[OUTPUT]
+dcdfile          = run7.dcd
+rstfile          = run7.rst
+
+[SSGAMD]
+ssgamd = yes
+boost = yes
+thresh_type = LOWER
+region = 1
+sigma0_dih  = 0.5
+sigma0_elec = 0.5
+update_period = 0
+param_type = D C
+params_dih  =  55.9223         18.4684         37.6801          3.3045
+params_elec =  24.5943        -27.6643          1.3816          6.1254
+
+[ENERGY]
+forcefield       = AMBER
+electrostatic    = PME
+switchdist       = 9.0
+cutoffdist       = 9.0
+pairlistdist     = 10.5
+pme_alpha        = auto
+dispersion_corr  = EPRESS
+
+[DYNAMICS]
+integrator     = VVER
+nsteps         = 375000000
+timestep       = 0.004
+eneout_period  = 2500
+crdout_period  = 2500
+rstout_period  = 250000
+nbupdate_period   = 5
+thermostat_period = 5
+barostat_period   = 5
+hydrogen_mr    = yes
+hmr_target     = solute
+hmr_ratio      = 2.5
+hmr_ratio_xh1  = 2.0
+iseed = 7
+
+[CONSTRAINTS]
+rigid_bond       = YES
+water_model      = WAT
+
+[ENSEMBLE]
+ensemble         = NVT 
+temperature      = 300
+tpcontrol        = BUSSI
+
+[BOUNDARY]
+type             = PBC
+ 
+[SELECTION]
+group1           = rno:3-16 and (an:N or an:H or an:CA or an:C or an:O)

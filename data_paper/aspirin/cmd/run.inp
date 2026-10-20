@@ -1,0 +1,44 @@
+[INPUT]
+prmtopfile = ../system.prmtop
+ambcrdfile = ../system.inpcrd
+rstfile    = ../run0.rst
+
+[OUTPUT]
+dcdfile          = run1.dcd
+rstfile          = run1.rst
+
+[ENERGY]
+forcefield       = AMBER
+electrostatic    = PME
+switchdist       = 9.0
+cutoffdist       = 9.0
+pairlistdist     = 10.5
+pme_alpha        = auto
+dispersion_corr  = EPRESS
+
+[DYNAMICS]
+integrator     = VVER
+nsteps         = 250000000
+timestep       = 0.004
+eneout_period  = 2500
+crdout_period  = 2500
+rstout_period  = 250000
+nbupdate_period   = 5
+thermostat_period = 5
+barostat_period   = 5
+hydrogen_mr    = yes
+hmr_target     = solute
+hmr_ratio      = 2.5
+hmr_ratio_xh1  = 2.0
+
+[CONSTRAINTS]
+rigid_bond       = YES
+water_model      = WAT
+
+[ENSEMBLE]
+ensemble         = NVT 
+temperature      = 300
+tpcontrol        = BUSSI
+
+[BOUNDARY]
+type             = PBC
