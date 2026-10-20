@@ -111,4 +111,12 @@ data
 
 
 ## Citations
-
+```bibtex
+@article{Oshima2026ssGaMD,
+  title = {Site-Selective Gaussian Accelerated Molecular Dynamics and Its Integration with Replica-Exchange Methods},
+  journal = {ChemRxiv},
+  url = {https://chemrxiv.org/doi/full/10.26434/chemrxiv.15010586/v1},
+  doi = {10.26434/chemrxiv.15010586/v1},
+  author = {Oshima, Hiraku},
+}
+```
