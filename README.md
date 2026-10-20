@@ -31,7 +31,7 @@ This dataset contains molecular structures, topology and coordinate files, simul
 
 ### Directory structure
 ```bash
-data
+data_paper
 ├── aspirin
 │   ├── cmd
 │   │   ├── calc_pmf.py
