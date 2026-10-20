@@ -26,8 +26,89 @@ make -j4
 make install
 ```
 
-## Usage
+## Simulation Files in ssGaMD paper
+This dataset contains molecular structures, topology and coordinate files, simulation input files, and restart files for simulations of beta-cyclodextrin-aspirin binding, Src kinase-PP1 binding, and Trp-cage folding. For each system, scripts for reweighting (reweight.sh) are prepared.
+
+### Directory structure
+```bash
+data
+├── aspirin
+│   ├── cmd
+│   │   ├── calc_pmf.py
+│   │   ├── reweight.sh
+│   │   ├── run.inp
+│   │   └── run0.rst
+│   ├── gamd
+│   │   ├── calc_pmf_gamd.py
+│   │   ├── reweight.sh
+│   │   ├── run.inp
+│   │   └── run0.rst
+│   ├── ssgamd
+│   │   ├── calc_dG.py
+│   │   ├── calc_pmf_ssgamd.py
+│   │   ├── reweight.sh
+│   │   ├── run.inp
+│   │   └── run0.rst
+│   ├── system.inpcrd
+│   ├── system.pdb
+│   └── system.prmtop
+├── src_pp1
+│   ├── reus
+│   │   ├── reweight.sh
+│   │   ├── rst
+│   │   │   ├── rep1.rst
+│   │   │   ├── rep10.rst
+│   │   │   ├── ...
+│   │   │   ├── rep8.rst
+│   │   │   └── rep9.rst
+│   │   └── run.inp
+│   ├── ssgareus
+│   │   ├── calc_pmf_ssgamd.py
+│   │   ├── reweight.sh
+│   │   ├── rst
+│   │   │   ├── rep1.rst
+│   │   │   ├── rep10.rst
+│   │   │   ├── ...
+│   │   │   ├── rep8.rst
+│   │   │   └── rep9.rst
+│   │   └── run.inp
+│   ├── system.inpcrd
+│   ├── system.pdb
+│   └── system.prmtop
+└── trpcage
+    ├── remd
+    │   ├── calc_pmf_remd.py
+    │   ├── reweight.sh
+    │   ├── run.inp
+    │   └── run0.rst
+    ├── ssgamd
+    │   ├── calc_pmf_ssgamd.py
+    │   ├── reweight.sh
+    │   ├── run0.rst
+    │   ├── run1.inp
+    │   ├── run10.inp
+    │   ├── ...
+    │   ├── run8.inp
+    │   └── run9.inp
+    ├── ssgaremd
+    │   ├── calc_pmf_ssgamd.py
+    │   ├── reweight.sh
+    │   ├── run.inp
+    │   └── run0.rst
+    ├── system.inpcrd
+    ├── system.pdb
+    └── system.prmtop
+```
+### File descriptions
+
+| Extension | Description |
+|---|---|
+| `.pdb` | Molecular structure in PDB format. |
+| `.prmtop` | AMBER topology file. |
+| `.inpcrd` | AMBER coordinate file. |
+| `.inp` | GENESIS input file. |
+| `.rst` | Restart file for each simulation. |
 
 
-## Citation
+## Citations
 
